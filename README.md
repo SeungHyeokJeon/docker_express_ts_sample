@@ -10,5 +10,6 @@
 
 ### Execution
 
-- `docker load -i ./node-test_221022.tar`
+- `docker build -t [image name] .`
+  - if you set the image name to `node-test`, you must rename `image` in `docker-compose.yml`
 - `docker-compose up`
