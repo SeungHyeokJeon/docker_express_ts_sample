@@ -1,1 +1,4 @@
-dist/
+# folder
+/dst
+# file
+/.env
