@@ -14,7 +14,7 @@
 1. install npm libraries
 
 ```
-npm install express typescript  eslint @types/express dotenv prettier eslint-config-prettier eslint-plugin-prettier nodemon @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install express@^4.18.2 typescript@^4.8.4 eslint@^8.26.0 @types/express@^4.17.14 dotenv@^16.0.3 prettier@^2.7.1 eslint-config-prettier@^8.5.0 eslint-plugin-prettier@^4.2.1 nodemon@^2.0.20 @typescript-eslint/eslint-plugin@^5.40.1 @typescript-eslint/parser@^5.40.1
 ```
 
 2. create `/.env` file
