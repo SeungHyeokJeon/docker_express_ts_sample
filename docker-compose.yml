@@ -1,8 +1,21 @@
 version: '3.3'
 services:
+  mariadb:
+    image: mariadb
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db/conf.d:/etc/mysql/conf.d
+      - ./db/uams:/var/lib/mysql/uams # db data
+      - ./db/initdb.d:/docker-entrypoint.initdb.d
+    env_file: .env
+    environment:
+      TZ: Asia/Seoul
+    restart: always
+
   node-test:
+    image: node-test
     ports:
       - '8080:8080'
     volumes:
       - ./:/app
-    image: node-test
