@@ -13,8 +13,11 @@ if (envFound.error) {
 }
 
 export default {
-  /**
-   * Your favorite port
-   */
   port: parseInt(process.env.PORT as string, 10) as number,
+  DBHost: process.env.DB_HOST as string,
+  DBPort: parseInt(process.env.DB_PORT as string, 10) as number,
+  DBRootPassword: process.env.DB_HOST as string,
+  Database: process.env.DB_HOST as string,
+  DBUser: process.env.DB_HOST as string,
+  DBPassword: process.env.DB_HOST as string,
 };

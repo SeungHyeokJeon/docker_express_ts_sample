@@ -1,7 +1,10 @@
 import express, { Request, Response, NextFunction } from 'express';
 import config from '../config';
+import connectDB from '../config/DBConnection';
 import routes from './routes';
 require('dotenv').config();
+
+connectDB();
 
 const app: express.Application = express();
 

@@ -19,3 +19,5 @@ services:
       - '8080:8080'
     volumes:
       - ./:/app
+    links:
+      - mariadb:node-test
