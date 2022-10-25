@@ -14,10 +14,10 @@ if (envFound.error) {
 
 export default {
   port: parseInt(process.env.PORT as string, 10) as number,
-  DBHost: process.env.DB_HOST as string,
-  DBPort: parseInt(process.env.DB_PORT as string, 10) as number,
-  DBRootPassword: process.env.DB_HOST as string,
-  Database: process.env.DB_HOST as string,
-  DBUser: process.env.DB_HOST as string,
-  DBPassword: process.env.DB_HOST as string,
+  DBHost: process.env.MYSQL_HOST as string,
+  DBPort: parseInt(process.env.MYSQL_PORT as string, 10) as number,
+  DBRootPassword: process.env.MYSQL_ROOT_PASSWORD as string,
+  Database: process.env.MYSQL_DATABASE as string,
+  DBUser: process.env.MYSQL_USER as string,
+  DBPassword: process.env.MYSQL_PASSWORD as string,
 };
